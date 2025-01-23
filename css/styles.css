@@ -20,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: url('images/Backrounds/lucas-expedidor-C0OD8OM-oM0-unsplash.jpg') no-repeat center center/cover;
+    background: url('../images/Backrounds/lucas-expedidor-C0OD8OM-oM0-unsplash.jpg') no-repeat center center/cover;
     color: white;
     display: flex;
     justify-content: center;
