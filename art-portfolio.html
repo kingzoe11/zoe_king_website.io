@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio</title>
+    <link rel="stylesheet" href="css/art-port.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Art Portfolio</h1>
+
+        <div class="gallery">
+
+            <div class="photo" onclick="showArtInfo(this)" 
+            data-date="Feb 23, 2022" 
+            data-dimenstion = "18in x 24in"
+            data-material="Grafite on Paper" 
+            data-assignment="VISA 1100 Drawing">
+        <img src="images/art portfolio /IMG_8162.jpeg" alt="Grumpy Butterfrog">
+        </div>
+
+
+        <div class="photo" onclick="showArtInfo(this)" 
+        data-date="March 22, 2022" 
+        data-dimenstion = "22in x 30in"
+
+        data-material="White color pencil, white fabric pen, white gel pen, white acrylic pen ink on black paper" 
+        data-assignment="ENGN 1350 Art Fluid Mechanics">
+        <img src="images/art portfolio /IMG_8383.jpeg" alt="Navigating the Stars">
+    </div>
+
+            <div class="photo" onclick="showArtInfo(this)" 
+                data-date="March 9, 2023" 
+                data-material="Photography" 
+                data-assignment="ENGN 1350 Art Fluid Mechanics">
+                <img src="images/art portfolio /DSC_1049.jpeg" alt="Smoke Vortex Ring">
+            </div>
+
+            <div class="photo" onclick="showArtInfo(this)" 
+                data-date="Feb 20, 2022" 
+                data-dimenstion = "11in x 14in"
+                data-material="Grafite on Paper" 
+                data-assignment="VISA 1100 Drawing">
+            <img src="images/art portfolio /FullSizeRender.jpeg" alt="Interpretive Self Portrait">
+            </div>
+
+            <div class="photo" onclick="showArtInfo(this)" 
+            data-date="March 14, 2022" 
+            data-material="Graphite on Paper" 
+            data-assignment="VISA 1100 Drawing">
+        <img src="images/art portfolio /IMG_8321.jpeg" alt="Timed Still Life Drawings">
+        </div>
+
+            <div class="photo" onclick="showArtInfo(this)" 
+                data-date="March 9, 2023" 
+                data-material="Photography" 
+                data-assignment="ENGN 1350 Art Fluid Mechanics">
+                <img src="images/art portfolio /DSC_1054.jpeg" alt="Smoke Vortex Ring">
+
+            </div>
+
+            <div class="photo" onclick="showArtInfo(this)" 
+            data-date="May 2, 2022" 
+            data-dimenstion = "24 x 24 in when fully installed"
+            data-material="Pen and orange ink on paper" 
+            data-assignment="VISA 1100 Drawing: Family Photos">
+        <img src="images/art portfolio /IMG_9228.jpeg" alt="Kings">
+        </div>
+
+        <div class="photo" onclick="showArtInfo(this)" 
+            data-date="February 7, 2021" 
+            data-dimenstion = " 11in x 14in "
+            data-material=" pencil on paper(6H, 2H,H,HB, B, 2B,6B, 12B)" 
+            data-assignment="VISA 100 Introduction">
+        <img src="images/art portfolio /IMG_1907.jpeg" alt="Value Drawing">
+        </div>
+
+            <div class="photo" onclick="showArtInfo(this)" 
+            data-date="Feb 17, 2022" 
+            data-material="Graphite on Paper" 
+            data-assignment="VISA 1100 Drawing: Nature Sketch">
+            <img src="images/art portfolio /66680827103__20472278-DE77-4F9E-99FD-030658B77BE7.jpeg" alt="Fish Skeleton">
+        </div>
+
+        <div class="photo" onclick="showArtInfo(this)" 
+            data-material="Graphite on Paper" 
+            data-assignment="Drawing">
+            <img src="images/art portfolio /IMG_E5145.JPG" alt="Portrait Drawing">
+        </div>
+
+
+
+            <div class="photo" onclick="showArtInfo(this)" 
+                data-date="March 9, 2023" 
+                data-material="Photography" 
+                data-assignment="ENGN 1350 Art Fluid Mechanics">
+                <img src="images/art portfolio /DSC_1113.jpeg" alt="Smoke Rings 2D Visulaization">
+            </div>
+
+
+        <div class="photo" onclick="showArtInfo(this)" 
+        data-date="March 14, 2022" 
+        data-material="Graphite on Paper" 
+        data-assignment="VISA 1100 Drawing">
+        <img src="images/art portfolio /IMG_8326.jpeg" alt="Timed Life Drawing">
+    </div>
+
+    <div class="photo" onclick="showArtInfo(this)" 
+    data-date="March 9, 2023" 
+    data-material="Photography" 
+    data-assignment="ENGN 1350 Art Fluid Mechanics">
+    <img src="images/art portfolio /DSC_1072.jpeg" alt="Heart Smoke Vortex Ring">
+</div>
+
+<div class="photo" onclick="showArtInfo(this)" 
+        data-date="March 14, 2022" 
+        data-dimenstion = "11in x 14in"
+        data-material="Grafite on Paper" 
+        data-assignment="VISA 1100 Drawing">
+    <img src="images/art portfolio /IMG_8316.jpeg" alt="Timed Life Drawing">
+    </div>
+
+<div class="photo" onclick="showArtInfo(this)" 
+data-date="March 9, 2023" 
+data-material="Photography" 
+data-assignment="ENGN 1350 Art Fluid Mechanics">
+<img src="images/art portfolio /DSC_1122.jpeg" alt="Smoke Rings 2D Visulaization">
+</div>
+
+
+
+        </div>
+        </div>
+    </div>
+
+
+<!-- Photo Info Modal -->
+<div id="photo-info" class="photo-info">
+    <div class="photo-preview">
+        <img id="photo-image" src="" alt="Full Image">
+    </div>
+    <div class="photo-details">
+        <h2 id="photo-title">Title</h2>
+        <!-- Add additional fields here -->
+        <p id="photo-date">Date: </p>
+        <p id="photo-dimensions">Dimensions: </p>
+        <p id="photo-material">Material: </p>
+        <p id="photo-assignment">Assignment: </p>
+        <button onclick="closePhotoInfo()">Close</button>
+    </div>
+</div>
+    
+    <script src="js/art-port.js"></script>
+</body>
+</html>
+
+

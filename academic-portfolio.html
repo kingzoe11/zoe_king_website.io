@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Profile</title>
+    <link rel="stylesheet" href="css/academic-port.css">
+</head>
+<body>
+
+<!-- Container for left and right sections -->
+<div class="container">
+    <!-- Left Side: Class Information -->
+    <div class="left-section">
+
+        <h2>Tools</h2>
+        <div class="tools">
+            <div class="tool-box">MATLAB</div>
+            <div class="tool-box">Ai Illustrator</div>
+            <div class="tool-box">Julia</div>
+            <div class="tool-box">Java</div>
+            <div class="tool-box">Phython</div>
+            <div class="tool-box">DLTv</div>
+            <div class="tool-box">Fiji</div>
+            <!-- Add more tools as needed -->
+        </div>
+        <h2>Certifications</h2>
+        <ul class="certifications">
+            <li>California State Boater License </li>
+            <li>PADI Advanced Open Water Dive </li>
+            <!-- Add more certifications -->
+        </ul>
+
+        <h2>Classes</h2>
+        <div class="tab-buttons">
+            <button class="tab-button" onclick="showTab('relevant')">Relevant Classes</button>
+            <button class="tab-button" onclick="showTab('all')">All Classes</button>
+        </div>
+        <div id="relevant" class="tab-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Semester</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr class="class-item" data-description="Space exploration has revealed an astonishing array of surface features on the planets and their satellites. Why are atmospheres on the planets different from Earth's atmosphere? Do other planets represent our past or future environment? Is there life on other planets? The planets and their histories are compared to gain insight and a new perspective on planet Earth.">
+                            <td class="class-name">GEOL0050 Mars, Moon, and the Earth</td>
+                            <td>Fall 2019</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Relationship between the structure of matter and its engineering properties. Topics: primary and secondary bonding; crystal structure; atomic transport in solids; defects in crystals; mechanical behavior of materials; phase diagrams and their utilization; heat treatment of metals and alloys; electrical and optical properties of materials; strengthening mechanisms in solids and relationships between microstructure and properties. Lectures, recitations, laboratory.">
+                            <td class="class-name">ENGN0410 Materials Science</td>
+                            <td>Fall 2020</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="How and why do animals run, jump, swim and fly? Physiology, anatomy, ecology, and evolutionary history all influence, and are influenced by, the way animals move around. We will integrate analyses from many levels of biological organization - from molecular motors, through bone-muscle systems, to biogeography - with methods and approaches from mechanics, fluid dynamics, and robotics.">
+                            <td class="class-name">BIOL1800 Animal Locomotion</td>
+                            <td>Fall 2022</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Formulation of the basic conservation laws for a viscous, heat conducting, compressible fluid. Molecular basis for thermodynamic and transport properties. Kinematics of vorticity and its transport and diffusion. Introduction to potential flow theory. Viscous flow theory; the application of dimensional analysis and scaling to obtain low and high Reynolds number limits.">
+                            <td class="class-name">ENGN2810 Fluid Mechanics I</td>
+                            <td>Fall 2023</td>
+                            <td><span class="graduate">Graduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="An introduction to the mathematical foundations of continuum mechanics. Vectors and tensors, properties and basic operations. Kinematics of deformation. Conservation laws, thermodynamics. Stress. Constitutive equations. Elastic, viscous, and viscoelastic response. Linearization. Simple problems in finite and linear elasticity, and in Navier-Stokes flows. Creep and relaxation in linear viscoelasticity.">
+                            <td class="class-name">ENGN2210 Continuum Mechanics</td>
+                            <td>Fall 2023</td>
+                            <td><span class="graduate">Graduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Five decades of human activity in space has provided the world community with benefits including instant global communications and positioning, human and robotic exploration of the moon, planets and sun, and a perspective of earth which continues to inform and influence our relationship with our environment.Unlike other technical revolutions of the 20th century space has not transitioned to a commercial, consumer market commodity. Rather its users and applications remain primarily large and institutional.To experience the challenges of engineering design and of changing an industrial paradigm, we will work in one or several groups to identify a use of space, and a plan for its implementation, that could help transition space from its status as a niche technology. Through the process of design, we will confront the technical, economic, societal and political barriers to obtaining increased benefits from technologies in general, and space in particular, and to making new technologies beneficial to a wider range of users.">
+                            <td class="class-name">ENGN0120B Crossing the Space Chasm Through Engineering Design</td>
+                            <td>Spring 2020</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="A broad introduction to Newtonian dynamics of particles and rigid bodies with applications to engineering design. Concepts include kinematics and dynamics of particles and rigid bodies; conservation laws; vibrations of single degree of freedom systems; and use of MATLAB to solve equations of motion and optimize engineering designs. Examples of applications are taken from all engineering disciplines. Lectures, recitation, and team design projects, including use of Brown Design Workshop.">
+                            <td class="class-name">ENGN0040 Dynamics and Vibrations</td>
+                            <td>Spring 2020</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="An introduction to macroscopic thermodynamics, covering concepts like equilibrium, the zeroth, first and second laws, and their application to engineering systems such as engines, turbines, and chemical reactions.">
+                            <td class="class-name">ENGN0720 Thermodynamics</td>
+                            <td>Spring 2021</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This class provides an in-depth grounding in fluid mechanics principles, including dimensional analysis, viscous flows, lubrication, boundary layers, wave motion, and interfacial phenomena.">
+                            <td class="class-name">ENGN1860 Advanced Fluid Mechanics</td>
+                            <td>Spring 2022</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This class delves into advanced fluid mechanics, with topics such as aerodynamics, renewable energy, turbomachinery, and rocket propulsion. Includes labs, computational projects, and design projects.">
+                            <td class="class-name">ENGN1700 Fluid Mechanics of Aerospace and Energy Systems</td>
+                            <td>Spring 2023</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="A capstone course that focuses on designing engineering solutions to environmental contamination scenarios, incorporating laboratory work, computer modeling, and regulations.">
+                            <td class="class-name">ENGN1150 Environmental Engineering Design</td>
+                            <td>Spring 2023</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This course provides an introduction to scientific computation, focusing on physical science problems and computational methods used alongside experimental and theoretical techniques.">
+                            <td class="class-name">PHYS1600/2600 Computational Physics</td>
+                            <td>Spring 2024</td>
+                            <td><span class="graduate">Graduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This class covers experimental techniques in fluid mechanics, including Particle Image Velocimetry, image processing, and microfluidic and wind tunnel experimental techniques.">
+                            <td class="class-name">ENGN2912T Experimental Fluid Mechanics</td>
+                            <td>Spring 2024</td>
+                            <td><span class="graduate">Graduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Introduces advanced fluid mechanics topics, such as hydrodynamic stability, turbulence, wave motion, and compressible flow, focusing on research areas in fluid dynamics.">
+                            <td class="class-name">ENGN2820 Fluid Mechanics II</td>
+                            <td>Spring 2024</td>
+                            <td><span class="graduate">Graduate</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="all" class="tab-content hidden">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Class Name</th>
+                            <th>Semester</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="class-item" data-description="Introduction to the mammalian nervous system with emphasis on the structure and function of the human brain. Topics include the function of nerve cells, sensory systems, control of movement and speech, learning and memory, emotion, and diseases of the brain. No prerequisites, but knowledge of biology and chemistry at the high school level is assumed.">
+                            <td class="class-name">NEUR0010 The Brain: An Introduction to Neuroscience</td>
+                            <td>Fall 2019</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Covers roughly the same material and has the same prerequisites as MATH 0170, but is intended for students with a special interest in physics or engineering. The main topics are: calculus of vectors and paths in two and three dimensions; differential equations of the first and second order; and infinite series, including power series and Fourier series. The extra hour is a weekly problem session.">
+                            <td class="class-name">MATH0190 Advanced Placement Calculus (Physics/Engineering)</td>
+                            <td>Fall 2019</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Space exploration has revealed an astonishing array of surface features on the planets and their satellites. Why are atmospheres on the planets different from Earth's atmosphere? Do other planets represent our past or future environment? Is there life on other planets? The planets and their histories are compared to gain insight and a new perspective on planet Earth.">
+                            <td class="class-name">GEOL0050 Mars, Moon, and the Earth</td>
+                            <td>Fall 2019</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="ENGN 0030 introduces students to the engineering profession and the important role engineers play in society. The course content begins with engineering design, followed by the analysis of static structures. Topics also include Computer Aided Design, basic Matlab programming, professional ethics, and social responsibility. Students complete group training modules and design projects in the Brown Design Workshop, led by an undergraduate mentor. ENGN 0030 provides the foundation for further study in engineering. It should be taken by students considering concentrating in engineering, interested in the entrepreneurship curriculum, and curious about engineering and design.">
+                            <td class="class-name">ENGN0030 Introduction to Engineering</td>
+                            <td>Fall 2019</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Covers roughly the same material as MATH 0180, but is intended for students with a special interest in physics or engineering. The main topics are: geometry of three-dimensional space; partial derivatives; Lagrange multipliers; double, surface, and triple integrals; vector analysis; Stokes' theorem and the divergence theorem, with applications to electrostatics and fluid flow. The extra hour is a weekly problem session.">
+                            <td class="class-name">MATH0200 Intermediate Calculus (Physics/Engineering)</td>
+                            <td>Spring 2020</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Five decades of human activity in space has provided the world community with benefits including instant global communications and positioning, human and robotic exploration of the moon, planets and sun, and a perspective of earth which continues to inform and influence our relationship with our environment.Unlike other technical revolutions of the 20th century space has not transitioned to a commercial, consumer market commodity. Rather its users and applications remain primarily large and institutional.To experience the challenges of engineering design and of changing an industrial paradigm, we will work in one or several groups to identify a use of space, and a plan for its implementation, that could help transition space from its status as a niche technology. Through the process of design, we will confront the technical, economic, societal and political barriers to obtaining increased benefits from technologies in general, and space in particular, and to making new technologies beneficial to a wider range of users.">
+                            <td class="class-name">ENGN0120B Crossing the Space Chasm Through Engineering Design</td>
+                            <td>Spring 2020</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="A broad introduction to Newtonian dynamics of particles and rigid bodies with applications to engineering design. Concepts include kinematics and dynamics of particles and rigid bodies; conservation laws; vibrations of single degree of freedom systems; and use of MATLAB to solve equations of motion and optimize engineering designs. Examples of applications are taken from all engineering disciplines. Lectures, recitation, and team design projects, including use of Brown Design Workshop.">
+                            <td class="class-name">ENGN0040 Dynamics and Vibrations</td>
+                            <td>Spring 2020</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This class explores the electronic structure of atoms and molecules, thermodynamics, solution equilibrium, electrochemistry, chemical kinetics, and reaction mechanisms. Includes both lecture and laboratory sections.">
+                            <td class="class-name">CHEM0330 Equilibrium, Rate, and Structure</td>
+                            <td>Spring 2020</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This course presents a broad introduction to environmental engineering, and will help students to explore environmental engineering as an academic major and as career option. The course covers topics in environmental engineering: chemistry fundamentals, mass balance, air pollution, water pollution, sustainable solid waste management and global atmospheric change. The course is essential for the environmental engineering students who are planning to take more advanced courses in environmental engineering. This course is also for the students in other engineering disciplines and sciences, who are interested in environmental constraints on technology development and practice, which have become increasingly important in many fields.">
+                            <td class="class-name">ENGN0490 Fundamentals of Environmental Engineering</td>
+                            <td>Fall 2020</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Relationship between the structure of matter and its engineering properties. Topics: primary and secondary bonding; crystal structure; atomic transport in solids; defects in crystals; mechanical behavior of materials; phase diagrams and their utilization; heat treatment of metals and alloys; electrical and optical properties of materials; strengthening mechanisms in solids and relationships between microstructure and properties. Lectures, recitations, laboratory.">
+                            <td class="class-name">ENGN0410 Materials Science</td>
+                            <td>Fall 2020</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="The topic of this course is the scientific study of animal behavior, based on the theoretical framework proposed by Nobel Prize winner Niko Tinbergen. This framework addresses four basic questions about behavior: its evolutionary history, its function, its development, and its causation (underlying mechanisms). Using Tinbergen’s framework, we will study two major categories of behavior – mating and aggression – in a range of animal species.">
+                            <td class="class-name">CLPS0110 Animal Behavior</td>
+                            <td>Fall 2020</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This course will cover mathematical techniques involving ordinary differential equations used in the analysis of physical, biological, and economic phenomena. The course emphasizes established methods and their applications rather than rigorous foundation. Topics include: first and second order differential equations, an introduction to numerical methods, series solutions, and Laplace transformations.">
+                            <td class="class-name">APMA0330 Methods of Applied Mathematics I, II</td>
+                            <td>Fall 2020</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This course explores all the energy forms, but will focus on energy sources from which the majority of “useful” energy originates at the present time. Basic heat transfer problems related to energy efficiency are presented. Rankine and Brayton power cycles are introduced. Cycle modifications supporting energy efficiency are explored. Carbon footprint calculations are illustrated. Traditional and cutting-edge technologies for carbon capture and storage presented. Emissions such as SOx, NOx, and PM and their capture technologies investigated. The Earth climate model examined. The course features three 1-page long scientific summary writings and the tour to the Manchester Street Power Station.">
+                            <td class="class-name">ENGN1931P Energy and the Environment</td>
+                            <td>Fall 2021</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="An introduction to macroscopic thermodynamics, covering concepts like equilibrium, the zeroth, first and second laws, and their application to engineering systems such as engines, turbines, and chemical reactions.">
+                            <td class="class-name">ENGN0720 Thermodynamics</td>
+                            <td>Spring 2021</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This class focuses on building foundational skills for an art practice, including drawing, collage, printmaking, and color theory, with an emphasis on creative problem-solving and project management.">
+                            <td class="class-name">VISA0100 Studio Foundation</td>
+                            <td>Spring 2021</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Introduces the principles of ecology, focusing on plant and animal populations, their interactions, and the hierarchical processes that shape ecological communities.">
+                            <td class="class-name">BIOL0420 Principles of Ecology</td>
+                            <td>Spring 2021</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Explores the history of piracy in the Caribbean from the sixteenth to eighteenth centuries, focusing on famous pirates, their ships, and the geopolitics and economics of piracy, including its ties to the trans-Atlantic slave trade.">
+                            <td class="class-name">ARCH0676 Pirates of the Caribbean: Scalawags, Sailors, and Slaves</td>
+                            <td>Spring 2021</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="A first course in probability and statistics, covering topics like data summaries, discrete probability, the normal distribution, and elementary statistical inference, with applications across various fields.">
+                            <td class="class-name">APMA0650 Essential Statistics</td>
+                            <td>Spring 2021</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Properties of fluids, dimensional analysis. Fluid statics, forces on submerged surfaces, kinematics. Conservation equations. Frictionless incompressible flows, Euler's equations, Bernoulli's equation: thrust, lift, and drag. Vorticity and circulation. Navier-Stokes equation, applications. Laminar and turbulent boundary layers, flow separation. Steady one-dimensional compressible flow. Sound, velocity, flow with area change, normal shocks. Lectures, laboratory.">
+                            <td class="class-name">ENGN0810 Fluid Mechanics</td>
+                            <td>Fall 2021</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Aquatic ecosystems are under intense pressure from a variety of anthropogenic stressors. Through lectures, discussion and authentic research projects, this course explores the impact of some of those stressors on the development and behavior of the most vulnerable, the developing young. Topics for Fall 2020 include the impact of anthropogenic stressors on local and global ecosystems; the behavioral biology, embryonic development, and behavior of zebrafish; basic research techniques for studying the development and behavior of zebrafish; and skills needed to conduct authentic scientific research. Students will design, conduct and present an authentic research project using zebrafish. No prior research experience required.">
+                            <td class="class-name">CLPS1195 Life Under Water in the Anthropocene</td>
+                            <td>Fall 2021</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Conservation Biology is the scientific study of the phenomena that affect the maintenance, loss, and restoration of biological diversity. Topics covered include: 1) the impacts of global warming, species invasions, and habitat destruction on biodiversity, 2) strategies developed to combat these threats, and 3) a consideration of key economic and ethical tradeoffs. Special attention will be paid to current debate and controversy within this rapidly emerging field of study. Readings will include the primary literature.">
+                            <td class="class-name">BIOL1470 Conservation Biology</td>
+                            <td>Fall 2021</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Focuses on drawing from models, observation, and imagination with an emphasis on creative work. Includes outside assignments and the introduction of conceptual and political art into the drawing process.">
+                            <td class="class-name">VISA1110 Drawing</td>
+                            <td>Spring 2022</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This class provides an in-depth grounding in fluid mechanics principles, including dimensional analysis, viscous flows, lubrication, boundary layers, wave motion, and interfacial phenomena.">
+                            <td class="class-name">ENGN1860 Advanced Fluid Mechanics</td>
+                            <td>Spring 2022</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Focuses on water supply and treatment systems, covering hydrological cycles, groundwater flows, water treatment technologies, and the environmental sustainability of water systems.">
+                            <td class="class-name">ENGN1340 Water Supply and Treatment Systems - Technology and Sustainability</td>
+                            <td>Spring 2022</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="An introduction to computing and programming with a focus on manipulating data. Covers programming for structured data, basic data science concepts, and the social impact of digital information.">
+                            <td class="class-name">CSCI0111 Computing Foundations: Data</td>
+                            <td>Spring 2022</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Examines the ocean's role in Earth's global environment, emphasizing the dynamical interaction of the ocean with the atmosphere, biosphere, cryosphere, and lithosphere. Focus on physical/chemical/biological systems' interconnections needed to understand natural and anthropogenic variability on various time and space scales, from El Niño to global warming. Three lectures, written exercises on oceanographic problems; two field trips to study estuarine and coastal processes.">
+                            <td class="class-name">EEPS0070 Introduction to Oceanography</td>
+                            <td>Fall 2022</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This course examines fundamental chemical aspects of pollutants and methods used to address pollution. We will consider pollution in air, water and soil media, and how pollution arises. Basic aspects of pollutant chemical partitioning will be explored. Examples of site investigation and the chemical tools used for that purpose will be discussed, along with risk assessment. Different ways of cleaning up contaminated sites will be examined, along with considering how mitigation and natural processes might represent options for addressing the particular pollution situation.">
+                            <td class="class-name">ENGN1931R The Chemistry of Environmental Pollution</td>
+                            <td>Fall 2022</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="The course will examine the biogeochemical cycling, fate and transport of chemicals in the atmospheric and aquatic environments. Topics such as chemical weathering, natural water pollution and remediation, acid deposition, global warming and air pollution will be examined through natural ecosystem examples from rivers, lakes, estuaries, and ocean. Field trips and laboratory arranged.">
+                            <td class="class-name">EEPS1370 Environmental Geochemistry</td>
+                            <td>Fall 2022</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="How and why do animals run, jump, swim and fly? Physiology, anatomy, ecology, and evolutionary history all influence, and are influenced by, the way animals move around. We will integrate analyses from many levels of biological organization - from molecular motors, through bone-muscle systems, to biogeography - with methods and approaches from mechanics, fluid dynamics, and robotics.">
+                            <td class="class-name">BIOL1800 Animal Locomotion</td>
+                            <td>Fall 2022</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This class delves into advanced fluid mechanics, with topics such as aerodynamics, renewable energy, turbomachinery, and rocket propulsion. Includes labs, computational projects, and design projects.">
+                            <td class="class-name">ENGN1700 Fluid Mechanics of Aerospace and Energy Systems</td>
+                            <td>Spring 2023</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Focuses on using fluid flows to create art, encouraging students to design dynamic sculptures, paintings, and installations based on scientific and artistic analysis of fluid dynamics.">
+                            <td class="class-name">ENGN1350 Art Fluids Engineering</td>
+                            <td>Spring 2023</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="A capstone course that focuses on designing engineering solutions to environmental contamination scenarios, incorporating laboratory work, computer modeling, and regulations.">
+                            <td class="class-name">ENGN1150 Environmental Engineering Design</td>
+                            <td>Spring 2023</td>
+                            <td><span class="undergraduate">Undergraduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="An introduction to methods of mathematical analysis in physical science and engineering. This course focuses on analytical techniques in mathematics. It includes series solution for differential equations, Fourier series and Fourier transform for solving partial differential equations, analytical maximum and minimum problems, calculus of variations and complex functions, and complex calculus.">
+                            <td class="class-name">ENGN2010 Mathematical Methods in Engineering and Physics I</td>
+                            <td>Fall 2023</td>
+                            <td><span class="graduate">Graduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Formulation of the basic conservation laws for a viscous, heat conducting, compressible fluid. Molecular basis for thermodynamic and transport properties. Kinematics of vorticity and its transport and diffusion. Introduction to potential flow theory. Viscous flow theory; the application of dimensional analysis and scaling to obtain low and high Reynolds number limits.">
+                            <td class="class-name">ENGN2810 Fluid Mechanics I</td>
+                            <td>Fall 2023</td>
+                            <td><span class="graduate">Graduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="An introduction to the mathematical foundations of continuum mechanics. Vectors and tensors, properties and basic operations. Kinematics of deformation. Conservation laws, thermodynamics. Stress. Constitutive equations. Elastic, viscous, and viscoelastic response. Linearization. Simple problems in finite and linear elasticity, and in Navier-Stokes flows. Creep and relaxation in linear viscoelasticity.">
+                            <td class="class-name">ENGN2210 Continuum Mechanics</td>
+                            <td>Fall 2023</td>
+                            <td><span class="graduate">Graduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This course provides an introduction to scientific computation, focusing on physical science problems and computational methods used alongside experimental and theoretical techniques.">
+                            <td class="class-name">PHYS1600/2600 Computational Physics</td>
+                            <td>Spring 2024</td>
+                            <td><span class="graduate">Graduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="This class covers experimental techniques in fluid mechanics, including Particle Image Velocimetry, image processing, and microfluidic and wind tunnel experimental techniques.">
+                            <td class="class-name">ENGN2912T Experimental Fluid Mechanics</td>
+                            <td>Spring 2024</td>
+                            <td><span class="graduate">Graduate</span></td>
+                        </tr>
+                        <tr class="class-item" data-description="Introduces advanced fluid mechanics topics, such as hydrodynamic stability, turbulence, wave motion, and compressible flow, focusing on research areas in fluid dynamics.">
+                            <td class="class-name">ENGN2820 Fluid Mechanics II</td>
+                            <td>Spring 2024</td>
+                            <td><span class="graduate">Graduate</span></td>
+                        </tr>
+                         </tbody>
+                </table>
+            </div>
+        </div>
+    </div>    
+
+
+
+<!-- Modal Structure for Class Description -->
+<div id="class-modal" class="modal">
+    <div class="modal-content">
+        <h2 id="class-title"></h2>
+        <p id="class-desc"></p>
+        <button class="close-btn">Close</button>
+    </div>
+</div>
+
+    <!-- Right Side: Tools and Certifications -->
+    <div class="right-section">
+
+        <!-- Projects Section -->
+        <section id="projects">
+        <h2>Projects</h2>
+      
+        <details>
+            <summary><strong>Fog Harp Design Project</strong></summary>
+            
+            <!-- Photos - Smaller and next to each other -->
+            <div class="image-container">
+                <img src="Academic/Projects/Fog Harp /Diagram.webp" alt="Fog Harp Design Image 1" class="project-image">
+                <img src="Academic/Projects/Fog Harp /Build.webp" alt="Fog Harp Design Image 2" class="project-image">
+            </div>
+            
+            <!-- Description -->
+            <p>
+                A fog harvester is a device designed to capture water droplets from fog and condense them into liquid water. These devices typically use a mesh or similar material to trap the tiny water droplets found in fog, allowing them to coalesce and drip down into a collection container. The key components of a fog harvester include a fine mesh or screen stretched between poles to catch the fog droplets, a sturdy frame to support the mesh and withstand wind and weather conditions, a collection trough at the bottom of the mesh to gather the condensed water droplets, and a storage tank to collect and store the harvested water for later use.
+
+Fog harvesters are particularly important because they provide a solution to water scarcity, especially in arid and semi-arid regions where conventional water sources are limited. This method of water collection is sustainable and low-cost, requiring no external energy source other than the natural movement of fog. The operational and maintenance costs are also low compared to other water collection methods like desalination. Additionally, fog harvesting improves local ecosystems by providing a reliable source of water that can sustain local flora and fauna, supporting biodiversity and enhancing overall ecosystem health.
+
+In agriculture, farmers in foggy regions can use harvested water for irrigation, which can improve crop yields and reduce dependence on unreliable rainfall or expensive irrigation systems. For communities in fog-prone areas, access to a reliable source of clean water can improve living conditions, health, and hygiene. Notable examples of fog harvester applications include coastal mountains in Chile, where fog nets are used to collect water for drinking and irrigation in the Atacama Desert, and similar systems in Lima, Peru, providing water in one of the driest capitals in the world. In Morocco, large-scale fog harvesting projects supply water to rural communities in the Anti-Atlas Mountains. Overall, fog harvesting is an innovative and practical solution for addressing water scarcity, promoting sustainability, and improving the quality of life in many regions around the world.
+
+This design project's focus was to explore different wire orientations possible for fog harvesters and interpret their collection efficiency to determine if there is a way to improve water collection. By experimenting with various configurations of the mesh or screen used in fog harvesters, the goal was to identify the most effective arrangement for maximizing water capture from fog.
+            </p>
+        
+            <!-- PDF Viewer Embed - Only one page visible at a time -->
+            <div class="pdf-container">
+                <embed src="Academic/Projects/Fog Harp /fog harvester presentation_compressed.pdf" 
+                       type="application/pdf" width="100%" height="500px">
+            </div>
+        </details>
+
+        <details>
+            <summary><strong>An Investigation on the Arrow of Time</strong></summary>
+            
+            <!-- Photos - Smaller and next to each other -->
+            <div class="image-container">
+               </div>
+            
+            <!-- Description -->
+            <p>
+             </p>
+        
+            <!-- PDF Viewer Embed - Only one page visible at a time -->
+            <div class="pdf-container">
+                <embed src="Academic/Projects/Computational_Physics_compressed.pdf" 
+                       type="application/pdf" width="100%" height="500px">
+            </div>
+        </details>
+
+        <details>
+            <summary><strong>Space Horizons 2020</strong></summary>
+        
+            <!-- Container for images and description -->
+            <div class="image-container2">
+                <!-- First image and description in a flex container -->
+                <div class="image-wrapper2">
+                    <img src="Academic/Projects/spaceHorizons/Red_Patterned_Christmas_Facebook_Post_(3).webp" alt="Space Horizons Image 1" class="project-image2">
+                    <div class="image-description2">                    </div>
+                </div>
+        
+                <!-- Description of the first image -->
+                <div class="description-wrapper2">
+                    <p>
+                        Space Horizons is an annual conference and workshop that is dedicated to exploring revolutionary space technologies that will shape the future of the industry and seeing what is necessary to make them a reality.                    </p>
+                </div>
+            </div>
+        
+            <!-- Second image spanning the entire width -->
+            <div class="full-width-image-container2">
+                <img src="Academic/Projects/spaceHorizons/UPDATED_POSTER_CHARITY-min.webp" alt="Space Horizons Image 2" class="full-width-image2">
+            </div>
+        </details>
+    
+      
+        <details>
+          <summary><strong>Personal Rainbow Art Fluid Engineering</strong></summary>
+          <p><strong>Introduction:</strong><br><br>A rainbow forms when sunlight enters a water droplet, slows down, bends, and reflects inside the droplet, creating a spectrum of colors.<br><br>
+            Fermat’s Principle explains that light takes the quickest path, which changes when traveling through different media.<br><br>
+            Using equations for refraction and turning angles, the project aims to replicate this natural phenomenon.</p>
+            
+          <p><strong><br>Objective:</strong><br><br> Inspired by Olafur Eliasson’s Rainbow Assembly, the project aimed to create an artificial rainbow installation for an interactive experience on campus.</p>
+          <p><strong><br>Methods:</strong><br><br> Initial Schematic: Used a tent to block sunlight, with misters and lamps set at a 42-degree angle.<br><br>
+            Iteration 1: Electric backpack sprayer and halogen flood lamps; resulted in yellow mist instead of a full rainbow.<br><br>
+            Iteration 2: Garden misters in a tent; sunlight interference and yellow light remained issues.<br><br>
+            Iteration 3: Mist trellis using sunlight; provided a lightweight, mobile setup with a successful rainbow spectrum.</p>
+        <p><strong><br>Results:</strong><br><br> The final setup created vivid rainbows, best seen against a dark backdrop.<br><br>
+            Only a single, large rainbow spectrum was visible, contrary to initial expectations of multiple rainbows.</p>
+        <p><strong><br>Conclusions:</strong><br><br> The project successfully created a personal, interactive rainbow experience using a mist trellis and natural sunlight.<br><br>
+            Future recommendations include finding an indoor location to better control light and create more intense rainbows.<br><br>
+
+            <div class="image-container3">
+                <!-- Image with description below it -->
+                <div class="image-wrapper3">
+                    <img src="Academic/Projects/Rainbow/IMG_3938.png" alt="Rainbow Image" class="project-image3">
+                    <p class="image-description3">Design Project Group for Browns first Art Fluid Mechanics Class. </p>
+                </div>
+                
+                <div class="pdf-container3">
+                    <embed src="Academic/Projects/Rainbow/Arts Fluids Engn Final Project-compressed.pdf" 
+                           type="application/pdf" width="100%" height="350px">
+                </div>
+            </div>
+            
+            <div class="pdf-container">
+                <embed src="Academic/Projects/Rainbow/ENGN 1350 - Final Project - Group 6-compressed.pdf" 
+                       type="application/pdf" width="100%" height="500px">
+            </div><br>
+            
+        </details>
+            
+      <section id="presentation">
+        <h2>Posters and Presentations</h2>
+      
+        <details>
+          <summary><strong>Drag Forces and Unsteady Wakes Behind a Poro-Elastic Membrane Disk</strong></summary>
+          <div class="pdf-container">
+            <embed src="Academic/Poster and Presentation /2024_discover_FinalVersion_clean_fontlock-compressed.pdf" 
+                   type="application/pdf" width="100%" height="500px">
+        </div>
+        </details>
+      
+        <details>
+          <summary><strong>Tongue Behavior of Arboreal Colubrids During Gap Crossing</strong></summary>
+          <div class="pdf-container">
+            <embed src="Academic/Poster and Presentation /zking_VTsymp_TS-js.pdf" 
+                   type="application/pdf" width="100%" height="500px">
+        </div>  
+        </details>
+      </section>
+      
+      <section id="papers">
+        <h2>Papers</h2>
+      
+        <details>
+          <summary><strong>Unsteady forces and flows behind a poro-elastic membrane disk</strong></summary>
+          <a href="https://www.researchgate.net/publication/382968617_Unsteady_forces_and_flows_behind_a_poro-elastic_membrane_disk" target="_blank">ResearchGate Paper</a>
+        </details>
+      
+        <details>
+          <summary><strong>Drag forces and unsteady wakes behind a poro-elastic membrane disk</strong></summary>
+          <a href="https://www.researchgate.net/publication/382968296_Drag_forces_and_unsteady_wakes_behind_a_poro-elastic_membrane_disk" target="_blank">ResearchGate Paper</a>
+        </details>
+      </section>
+      
+      <section id="abstracts">
+        <h2>Abstracts</h2>
+      
+        <details>
+          <summary><strong>Discover 2024: Drag Forces and Unsteady Wakes Behind a Poro-Elastic Membrane Disk</strong></summary>
+          <div class="pdf-container">
+            <embed src="Academic/Abstracts /2024_discovor_abstract.pdf" 
+                   type="application/pdf" width="100%" height="500px">
+        </div>  
+     </details>
+      
+        <details>
+          <summary><strong>Fly Mechanics of Snakes: Aerodynamics of a Snake's Tongue</strong></summary>
+
+ <!-- Paper 1: Tongue-sticking -->
+ <details>
+    <summary><strong>Tongue-sticking: Tongue behavior of arboreal colubrids during gap crossing</strong></summary>
+    <p><em>Zoe King, Sydney Haywood, Giovanni Morris, Jeffery Anderson-Jr, Joshua Pulliam, Jerry Wong, Beckett Socha, Ulmar Grafe, Salwa Khalid, Jake Socha</em></p>
+    <p>
+        Tongue movement in snakes has been previously attributed to chemo- and mechanosensation characterized as a sweeping, vertical oscillation of the tongue, followed by the tongue being pulled back into the mouth to allow particle transfer to sensory organs. In previous studies, flying snakes (<i>Chrysopelea</i>) have been observed to protrude their tongue without oscillation in the context of locomotion. Do close relatives of flying snakes also exhibit this behavior? 
+        To investigate this question, we recorded the tongue behavior in close relatives (<i>Ahaetulla prasina, Dendrelaphis pictus, caudolineatus, and formosis</i>) as well as less related species (<i>Dryocalamus subannulatus, Boiga cynodon, drapiezii, and nigriceps, Lycodon capucinus</i>) as they traversed gaps. 
+        The setup consists of two artificial branches oriented horizontally and suspended 118 cm off the ground. Each snake completed four trials, recorded on four GoPro Hero4 cameras, crossing gaps of 0%, 15%, 30%, and 45% of the snake's snout to vent length. 
+        Among these species, only the close relatives of flying snakes (<i>Ahaetulla</i> and <i>Dendrelaphis</i> spp.) exhibited the presence of a tongue protrusion variant when crossing a gap. This behavior followed an oscillation, stick, oscillation (OSO) pattern. 
+        Generally, the tongue stick could be characterized by a rigid proximal half of the tongue while the tines show variable motion. The other species tested did not show any signs of tongue stick behavior. 
+        All snakes in this study were caught and examined at the University of Brunei Darussalam. This research was supported in part by the National Science Foundation (NSF) under grant numbers 1922516 and 2027523.
+    </p>
+    <div class="pdf-container">
+        <embed src="Academic/Abstracts /vt_reseach_symp2022_TS.pdf" 
+               type="application/pdf" width="100%" height="500px">
+    </div>  
+</details>
+
+<!-- Paper 2: Body Flattening -->
+<details>
+    <summary><strong>Body flattening in a close relative of flying snakes, Dendrelaphis pictus</strong></summary>
+    <p><em>Sydney Haywood, Zoe King, Giovanni Morris, Jeffery Anderson-Jr, Joshua Pulliam, Jerry Wong, Beckett Socha, Ulmar Grafe, Salwa Khalid, Jake Socha</em></p>
+    <p>
+        Flying snakes (<i>Chrysopelea</i>) are the only snakes that have been observed to use dorsoventral flattening while locomoting: they expand their ribs, allowing for more surface area and enabling them to glide. 
+        However, not all species have been observed closely for the presence of this behavior. Recently, we observed possible dorsoventral flattening in a closely related species to flying snakes, specifically in <i>Dendrelaphis pictus</i>, commonly known as the painted bronzeback. 
+        Although it cannot glide, <i>Dendrelaphis pictus</i> is capable of a similar behavior to <i>Chrysopelea</i>: jumping. Does <i>D. pictus</i> use dorsoventral flattening when jumping? 
+        To determine if <i>D. pictus</i> utilize dorsoventral flattening, they were incentivized to jump using a horizontal gap-crossing setup, and recorded with multiple cameras to examine the body before they jumped. 
+        We found that the anterior body flattened in 4 specimens tested. To compare this behavior to rib movement during breathing, we also conducted recordings of the snake while breathing at rest in a tank. 
+        While <i>D. pictus</i> has been observed using dorsoventral flattening, it differs significantly to that of <i>Chrysopelea</i>: <i>D. pictus</i> only appear to pulsate in and out of dorsoventral flattening, and only in one part of the body. 
+        This could explain why <i>Dendrelaphis</i> are not able to generate sufficient aerodynamic forces to glide from tree to tree. This study demonstrates that some traits specific to gliding may have evolved prior to gliding in flying snakes.
+        This research was supported in part by the National Science Foundation (NSF) under grant numbers 1922516 and 2027523.
+    </p>
+
+</details>
+
+<!-- Paper 3: Vertical Gap Crossing -->
+<details>
+    <summary><strong>Vertical Gap Crossing in Close Relatives of Flying Snakes</strong></summary>
+    <p><em>Giovanni Morris, Sydney Haywood, Zoe King, Jeffery Anderson-Jr, Joshua Pulliam, Jerry Wong, Beckett Socha, Ulmar Grafe, Salwa Khalid, Jake Socha</em></p>
+    <p>
+        Though limbed animals possess the ability to reach across horizontal and vertical gaps, limbless animals must find alternative methods of overcoming gaps in the arboreal environment. 
+        One strategy employed by snakes is cantilever locomotion. When navigating from one surface to another, snakes extend their bodies headfirst into the gap until they have reached their target. The snakes must provide proper stability and rigidity with the body in order to prevent themselves from buckling or pitching into the gap. 
+        How do snakes cope with gaps oriented in the vertical axis? Here, we investigated the vertical gap-crossing abilities of snakes, focusing on the effect of the substrate curvature on a snake's ability to cantilever. 
+        In this experiment, 6 painted bronzebacks (<i>Dendrelaphis pictus</i>) and 6 Asian vine snakes (<i>Ahaetulla prasina</i>) were allowed to cross from a base to a target perch, starting from one of four origin perches of varying curvature (diameter = 27, 43, and 157 mm, and a flat plane). 
+        The target perch was initially set at a small vertical distance (based on the size of the snake in percentage of snout-to-vent (SVL) length). 
+        As the snake rose to cross the gap, the distance was increased manually until the snake reached its maximum cantilever height and failed to reach the perch. Based on preliminary data, it is expected that the snakes will be able to gap cross at least 70-75% SVL.
+        This research was supported in part by the National Science Foundation (NSF) under grant numbers 1922516 and 2027523.
+    </p>
+
+</details>
+
+
+
+        </details>
+
+        <details>
+            <summary><strong> SICB 2023: Tongue-sticking in arboreal colubrids during gap crossing</strong></summary>
+            <p><em>1505 Zoe King, Sydney Haywood, Giovanni Morris, Jeffery Anderson-Jr, Joshua Pulliam, Jerry Wong, Beckett Socha, Ulmar Grafe, Salwa Khalid, Jake Socha</em></p>
+    <p>
+        Tongue-flicking in snakes is characterized by a rapid, high-frequency oscillation of the tongue, but other behaviors are known to be used. In tongue-sticking, the tongue is protruded statically without oscillation, a behavior previously noted in flying snakes (Chrysopelea) in the context of locomotion, specifically gap crossing and jumping prior to gliding. Is this behavior unique to flying snakes, or do other snakes also employ this form of tongue movement? And if so, how does the arboreal context influence the behavior? To investigate these questions, we recorded tongue behavior in sister taxa to Chrysopelea (Ahaetulla prasina, Dendrelaphis pictus, caudolineatus, and formosus) as well as outgroup species (Dryocalamus subannulatus, Boiga cynodon, drapiezii, and nigriceps, Lycodon capucinus) as snakes traversed a gap between two horizontally oriented perches. Snakes were first allowed to cross the perches in abutted position (a control, with no gap), and then were presented with gaps of 15%, 30%, and 45% SVL (snout-vent length) in random order. Among the species tested, only the close relatives of flying snakes (Ahaetulla and Dendrelaphis spp.) exhibited tongue sticking, present both in the control and gap trials. Furthermore, tongue sticking was more likely at the largest gap sizes, suggesting that tongue sticking plays a mechanosensory role associated with gap-crossing locomotion. This research was supported in part by the National Science Foundation under grant numbers 1922516 and 2027523.
+    </p>
+            <div class="pdf-container">
+              <embed src="Academic/Abstracts /SICB2023-abstract-volume.pdf" 
+                     type="application/pdf" width="100%" height="500px">
+          </div>  
+       </details>
+        </section>
+    </div>
+
+      
+
+    <script src="js/academic-port.js"></script>
+</body>
+</html>
