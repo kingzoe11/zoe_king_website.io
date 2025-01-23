@@ -1,0 +1,227 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Full viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    background-color: #000; /* Black background */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Title Box Fullscreen Background Section */
+.title-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/Backrounds/lucas-expedidor-C0OD8OM-oM0-unsplash.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10; /* Ensures title box stays on top */
+    transition: transform 1s ease-in-out; /* Smooth transition for transform */
+}
+
+.title-box h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'GrandCentral';
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.social-links {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.social-icon img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.5);
+}
+
+/* Main Content Section (Slideshow + Description) */
+.main-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    gap: 50px;
+    overflow-y: hidden;
+}
+
+.slideshow {
+    flex: 0 0 60%; /* Slideshow takes 60% width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background */
+    z-index: 5; /* Below the title box */
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slideshow img.active {
+    opacity: 1;
+}
+
+.description {
+    flex: 0 0 30%; /* Description takes 30% width */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.4rem;
+    font-family: 'GrandCentral';
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'GrandCentral';
+}
+
+.description p {
+    margin-bottom: 20px;
+}
+
+/* Scrolling Effects */
+body.scrolled .title-box {
+    transform: translateY(-100%); /* Hide the title box when scrolling */
+}
+
+body.scrolled .main-content {
+    padding-top: 0; /* Remove top space when title box disappears */
+}
+/* Directory Box */
+.directory-box {
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #123524; /* Slightly darker sheer green background */
+    color: white;
+    z-index: 100; /* Ensure it's above other elements */
+    transform: translateY(100%); /* Hidden by default */
+    transition: transform 1s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Consistent box model */
+    overflow: hidden;
+}
+
+/* Directory Content - Grid Layout */
+.directory-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+    grid-auto-rows: 350px; /* Control row height */
+    gap: 10px; /* Add space between grid items */
+    width: calc(100% - 20px); /* Adjust grid width to account for padding */
+    padding: 10px; /* Even padding on left and right */
+    margin: 0 auto; /* Center the grid within the container */
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+}
+
+/* Directory Items */
+.directory-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0; /* Add rounded corners if desired */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow for emphasis */
+    transition: transform 0.3s ease-in-out;
+}
+
+.directory-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3; /* Maintain consistent aspect ratio */
+    transition: transform 0.3s ease-in-out;
+}
+
+.directory-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Overlay and Title Styling */
+.directory-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    padding: 0px; /* Add padding around the title */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    text-align: center;
+    font-family: 'GrandCentral';
+    font-size: 0.8rem; /* Title size */
+    text-transform: uppercase;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(20px); /* Slight slide-in effect */
+}
+
+.directory-item:hover .directory-overlay {
+    opacity: 1; /* Show overlay on hover */
+    transform: translateY(0); /* Reset position */
+}
+
+
+/* Directory Title Styling */
+.directory-title {
+    font-size: 2rem;
+    font-family: 'GrandCentral';
+    text-align: center;
+    margin: 0 auto; /* Center the title */
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 100px; /* Adjust padding to control spacing above and below */
+}
+
+/* Photo info styling */
+.photo-details p {
+    font-size: 14px;
+    font-family: 'GrandCentral';
+    margin: 5px 0;
+    line-height: 1.5;
+}
+

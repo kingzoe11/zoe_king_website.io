@@ -1,0 +1,439 @@
+/* General Layout Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Space between blocks and the wall */
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a; /* Dark gray background for the page */
+    color: #E0E0E0; /* Light gray text for better readability */
+    align-items: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure the body takes up full height */
+    box-sizing: border-box;
+}
+
+/*----------------- BLOCK ONE: two sections left and right of each other ------------------ */
+
+/* Container Styling */
+.container {
+    display: flex;
+    width: 100%; /* Full width */
+    max-width: 1200px;
+    margin: 20px; /* Margin between container and the wall */
+    background: #2c2c2c;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the total width */
+    align-items: flex-start;
+}
+
+/* Left Section Styling */
+.left-section {
+    flex: 0 0 20%;
+    min-width: 300px;
+    margin-right: 20px; /* Space between left and right sections */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    z-index: 5;
+}
+
+/* Right Section Styling */
+.right-section {
+    flex: 0 0 70%; /* Description takes 30% width */
+    top: 0;
+    min-width: 300px; /* Minimum width to avoid being too narrow */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px; /* Add space between the container and this section */
+    background-color: #2c2c2c; /* Consistent background */
+    flex-direction: column;
+    border-radius: 8px;
+    transition: height 0.3s ease;  /* Smooth transition for height change */
+
+}
+
+/* General Section Styling */
+#projects, #posters-presentations, #papers, #abstracts { 
+    display: block; /* Ensure these sections are stacked vertically */
+    width: 95%;
+    margin-top: 20px; /* Space between sections */
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1; /* Ensure the sections appear above background */
+    margin-right: 30px; /* Example for extra space if needed */
+
+}
+
+
+/* Add box-sizing to handle padding correctly */
+* {
+    box-sizing: border-box;
+}
+
+/* Fix modal visibility */
+#class-modal {
+    display: flex; /* Ensures it's centered */
+}
+
+/* To ensure images fit properly */
+.project-image {
+    max-width: 100%;
+    width: 100%; /* Ensure they scale properly */
+    height: auto;
+}
+
+/* Optional: If you want to add a bottom margin for separation between sections */
+#projects {
+    margin-bottom: 5px;
+}
+
+#posters-presentations {
+    margin-bottom: 5px;
+}
+
+#papers {
+    margin-bottom: 5px;
+}
+
+#abstracts {
+    margin-bottom: 5px;
+}
+
+details summary {
+    margin-bottom: 20px; /* Add space between the titles */
+    font-size: 1.2em; /* Optional: Adjust font size to make the titles more prominent */
+    padding: 5px; /* Optional: Add padding around the title for better spacing */
+}
+
+/* ------ GENERAL FORMATTING -------------------------------------------------------------------------------------------
+
+/* Header Styling */
+h2 {
+    color: #FF6F61; /* Soft Coral for section titles */
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: 'ost';
+    font-size: 3.5vh; /* Adjusted to use 'vh' for consistency */
+}
+
+/* Styling for the bubble around Undergraduate and Graduate */
+.undergraduate, .graduate {
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1.25vh; /* Adjusted for consistency */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Coral Bubble for Undergraduate */
+.undergraduate {
+    background-color: #FF6F61; /* Soft coral for the undergraduate bubble */
+}
+
+/* Teal Bubble for Graduate */
+.graduate {
+    background-color: #4DB6AC; /* Muted teal for the graduate bubble */
+}
+
+/* Tab Buttons Styling */
+.tab-buttons {
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    padding: 8px 15px;
+    margin-right: 5px;
+    border: none;
+    background-color: #29648A; /* Deep blue for tab buttons */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-button:hover {
+    background-color: #4DB6AC; /* Teal hover state */
+}
+
+.tab-content.hidden {
+    display: none;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #424242; /* Medium gray for table borders */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+th {
+    background-color: #333; /* Dark background for table headers */
+    color: white;
+}
+
+td {
+    background-color: #2c2c2c; /* Light gray background for table cells */
+    color: #E0E0E0; /* Light gray text in cells */
+}
+
+/* Tools Section Styling */
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tool-box {
+    background: #4DB6AC; /* Teal for tool boxes */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Certifications Section Styling */
+.certifications {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.certifications li {
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    background: #424242; /* Medium gray for certifications */
+    border-radius: 5px;
+    color: #E0E0E0; /* Light gray text for certifications */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Modal Background */
+#class-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #2c2c2c; /* Dark container background */
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #E0E0E0;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #4DB6AC; /* Teal color for close button hover */
+}
+
+/* Modal Title and Description */
+#class-title {
+    font-size: 2rem;
+    color: #FF6F61; /* Soft Coral for modal title */
+    margin-bottom: 10px;
+}
+
+#class-desc {
+    font-size: 1rem;
+    color: #B0B0B0; /* Light gray for description text */
+}
+
+
+/* Container for images to sit next to each other */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Space between images */
+}
+
+/* Adjust the image size */
+.project-image {
+    width: 48%; /* Make each image 48% of the container's width */
+    max-width: 100%; /* Ensure images don't stretch too much */
+    height: auto;
+}
+
+/* Styling for the embedded PDF */
+.pdf-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.embed-pdf {
+    width: 100%;
+    height: 500px; /* Ensure the height is adjustable to fit the layout */
+}
+
+/* Optional: styling for the PDF link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+
+/* Container to hold the images */
+/* Container for images and description */
+.image-container2 {
+    display: flex;
+    justify-content: space-between; /* Ensure the images are spaced out */
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap; /* Allows wrapping for responsive design */
+    margin-top: 20px;
+}
+
+/* Wrapper around the first image to keep its aspect ratio */
+.image-wrapper2 {
+    position: relative;
+    width: 60%; /* Adjust as needed */
+}
+
+/* Make sure the image keeps its aspect ratio */
+.project-image2 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Description of the first image */
+.image-description2 {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 8px;
+}
+
+/* General project description styling */
+.project-description2 {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+/* Wrapper for the description */
+.description-wrapper2 {
+    flex-grow: 1; /* Allow the description to take up remaining space */
+    max-width: 400px; /* Limit the width of the description */
+    padding: 10px; /* Padding around the text */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Optional: Add some styling to the description */
+.description-wrapper2 p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Full width image container */
+.full-width-image-container2 {
+    width: 100%; /* Make the container full width */
+    margin-top: 20px; /* Add space between the images */
+}
+
+/* Make the second image take up the full width */
+.full-width-image2 {
+    width: 100%; /* Take up the entire width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it doesn't leave unwanted space */
+}
+
+
+/* Container for both image and PDF */
+.image-container3 {
+    display: flex;
+    justify-content: space-between; /* Space between image and PDF */
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 1px; /* Space between image and PDF */
+    margin-top: 20px;
+
+}
+
+/* Wrapper around the image and its description */
+.image-wrapper3 {
+    width: 50%; /* Adjust width for the image (leaving space for the PDF) */
+    text-align: center; /* Center the description text */
+}
+
+/* Styling for the image */
+.project-image3 {
+    width: 100%; /* Image takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+/* Description styling */
+.image-description3 {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Container for the PDF */
+.pdf-container3 {
+    width: 40%; /* PDF takes up 60% of the screen width */
+}
+
+/* For the section titles */
+h2 {
+    margin: 20px 0;  /* Top and bottom margin of 20px */
+    padding: 0;
+}
+
+/* For the dropdown menu titles (summary) */
+summary {
+    margin: 20px 0;  /* Top and bottom margin of 20px */
+    padding: 0;
+}
+
+/* Optional: For the details elements themselves, to ensure consistent spacing */
+details {
+    margin: 10px 0;  /* You can adjust this margin for spacing between dropdowns */
+}

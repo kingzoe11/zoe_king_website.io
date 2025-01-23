@@ -1,0 +1,124 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align at the top to keep space for the title */
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 20px; /* Space for the title */
+    margin-left: 20px; /* Left margin */
+    margin-right: 20px; /* Right margin */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+@font-face {
+    font-family: 'Rech';
+    src: url('../fonts/RechtmanPlain.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Keeps the container within a maximum width */
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    margin-left: auto; /* Centers the container horizontally */
+    margin-right: auto; /* Centers the container horizontally */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 80px;
+    font-family: 'Rech';
+    color: #ffffff;
+    padding-top: 20px; /* Adds padding to ensure the title isn't cut off */
+}
+
+/* Gallery grid setup */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 40px;
+    padding-bottom: 20px; /* Add space below gallery */
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Ensure all photos have the same height */
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make sure the images cover the available space */
+    transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Photo info modal */
+.photo-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.photo-details {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 300px;
+    margin-right: 30px;
+    margin-top: 15px; /* Control margin between title and description */
+    margin-bottom: 15px; /* Control margin below description */
+    margin-left: 0; /* Align text to the left */
+    line-height: 1.25; /* Line height for readability */
+}
+
+.photo-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px; /* Control margin between title and description */
+    margin-bottom: 15px; /* Control margin below description */
+    margin-left: 10; /* Align text to the left */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.photo-preview img {
+    max-width: 90vw; /* Maximum width is 90% of the viewport width */
+    max-height: 80vh; /* Maximum height is 80% of the viewport height */
+    object-fit: contain; /* Ensure the image scales correctly while maintaining aspect ratio */
+}
+
+button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 18px; /* Adjust padding to make it wider */
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 25px;
+    border-radius: 50px; /* This creates the oval shape */
+}
+
+button:hover {
+    background-color: #ff1a1a;
+}

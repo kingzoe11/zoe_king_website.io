@@ -1,0 +1,125 @@
+/* General Layout Styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;  /* Black background */
+    color: #F5F5DC;  /* Cream font color */
+}
+
+/* Custom font: Morgan */
+@font-face {
+    font-family: 'Morgan';
+    src: url('../fonts/Morgan.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brosta';
+    src: url('../fonts/Brosta.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Container for both labs */
+.lab-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;  /* Added some space around the container */
+    gap: 40px;
+    background-color: #000000;  /* Keeping the background black */
+    min-height: 100vh;  /* Ensure the container takes full height */
+    align-items: flex-start;  /* Align top of the container */
+}
+
+/* Each Lab Section Styling */
+.lab-section {
+    width: 45%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Make sure the content starts at the top */
+    min-height: 100%;  /* Allow box to expand to the bottom */
+}
+
+/* Dark Plum for odd section, Forest Green for even section */
+.lab-section:nth-child(odd) {
+    background-color: #4A1A3C;  /* Dark Plum */
+}
+
+.lab-section:nth-child(even) {
+    background-color: #2C6B3F;  /* Forest Green */
+}
+
+/* Section Title */
+.lab-section h2 {
+    font-size: 2rem;
+    color: #F5F5DC;  /* Cream text */
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Morgan';
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    width: 100%;
+    height: 400px;  /* Fixed height for the slideshow */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Each individual slide */
+.slides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;  /* Center the images horizontally */
+    align-items: center;  /* Center the images vertically */
+    position: absolute;
+}
+
+/* Image styling to maintain aspect ratio */
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Papers Section Styling */
+.papers {
+    margin-top: 30px;  /* Increased space between paper section */
+}
+
+.papers h3 {
+    font-size: 1.25rem;
+    color: #F5F5DC;  /* Cream color for headings */
+    font-family: 'Morgan';
+}
+
+.papers ul {
+    list-style-type: none;
+    padding-left: 0;
+    
+}
+
+.papers ul li {
+    margin: 15px 100px;  /* Increased space between paper items */
+}
+
+.papers ul li a {
+    text-decoration: none;
+    color: #F5F5DC;  /* Cream color for links */
+    font-weight: bold;
+    
+}
+
+.papers ul li a:hover {
+    color: #1abc9c;  /* Hover color for links */
+}
+

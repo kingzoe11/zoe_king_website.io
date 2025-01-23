@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #f5f5dc;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Airstream';
+    src: url('../fonts/Wanderlust.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+header {
+    text-align: center;
+    background-color: #000000;
+    padding: 20px 0;
+    font-family: 'Airstream';
+}
+
+.page-title {
+    color: #f5f5dc;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 10px;
+    font-family: 'Airstream', sans-serif;
+    color: #ffffff;
+}
+
+/* Main Map Section */
+.maps-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content horizontally */
+    padding: 50px;
+}
+
+/* Map Container (Non-clickable) */
+.map-container {
+    display: flex;
+
+    width: 99%; /* Full width of the page */
+    height: 600px; /* Set your desired height */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensure the iframe respects the rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+    background-color: #2c6e49; /* Dark Olive background for each map item */
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block;
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    text-decoration: none; /* Prevent underlining on the map container itself */
+    align-items: center;
+    justify-content: center; /* Centers content horizontally */
+}
+
+/* Map Title Styling */
+.map-title {
+    font-size: 2.5rem;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: 'Airstream';
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove the default border */
+    border-radius: 15px; /* Apply rounded corners directly to the iframe */
+    justify-content: center; /* Centers content horizontally */
+}
+
+
+/* Photo Grid Section */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 3 columns */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.photo-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.photo-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for photos */
+.photo-item:hover .photo-thumbnail {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Full-screen Modal */
+.photo-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
